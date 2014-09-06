@@ -1,10 +1,10 @@
 {
-  "name": "<%= _.slugify(projectName) %>",
+  "name": "<%= _.slugify(context.projectName) %>",
   "version": "0.0.0",
   "dependencies": {
-    <% if (useBackbone) { %>"backbone": "~1.0.0",
+    <% if (context.useBackbone) { %>"backbone": "~1.0.0",
     "jquery": "~1.10.1",
-    "underscore": "~1.4"<% } %><% if (useBackbone && useRequire) { %>,
+    "underscore": "~1.4"<% } %><% if (context.useBackbone && context.useRequire) { %>,
     "requirejs": "~2.1.4"<% } %>
   }
 }

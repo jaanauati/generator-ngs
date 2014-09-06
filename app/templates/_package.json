@@ -1,5 +1,5 @@
 {
-  "name": "<%= _.slugify(projectName) %>",
+  "name": "<%= _.slugify(context.projectName) %>",
   "version": "0.0.0",
   "author": {
     "name": "National Geographic Society Technology",
